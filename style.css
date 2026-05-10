@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+    color: rgb(255, 8, 8);
+    text-align: center;
+
+}
+h1{
+    text-shadow: red 0px 0px 10px;
+}
+h2{
+    color: rgb(120, 86, 86);
+    text-align: center;
+
+    font-size: 15px;
+
+}
+
+h4{
+    color: rgb(178, 154, 154);
+    text-align: center;
+}
+details {
+            width: 150px;  /* Reduce este valor para hacerlo más pequeño */
+text-align: center; 
+margin: 0 auto;
+}
+summary {
+            background: #c61212e2;
+            color: rgb(181, 211, 168);
+            padding: 5px 8px;
+            cursor: pointer;
+            list-style: none;
+            text-align: center;
+            border-radius: 10px;
+  
+        }
+.boton:hover {
+   transform: scale(1.1);
+}
+
+.operaciones{
+            background: #3e100834;
+            border: 1px solid #520404;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+.operaciones p{
+            margin: 0;
+            padding: 10px;
+            cursor: pointer;
+        }
+.operaciones p:hover {
+    background-color: #c6121219; 
+    color: rgb(181, 211, 168);
+    transition: all 0.3s ease;
+}
+
+.resultado{
+   visibility: hidden;
+            min-width: 250px;
+            background-color: #83e48b;
+            color: white;
+            border-radius: 8px;
+            padding: 12px;
+            position: fixed;
+            top:  50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s, visibility 0.3s;
+}
+.resultado.show {
+            visibility: visible;
+            opacity: 1;
+}
+.imagen {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 90px;        
+    left: 20px;         
+    z-index: 1;      
+}
+
+.imagen2 {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 90px;        
+    right: 20px;         
+
+    z-index: 1;      
+}

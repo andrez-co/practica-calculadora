@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>CALCULADORA DE NUMEROS</h1>
+
+    <h4>Agrega dos numeros para calcular:</h4>
+
+    <input type="number" id="num1" placeholder="Numero 1">
+    <br>
+    <br>
+    <input type="number" id="num2" placeholder="Numero 2">
+<br>
+<br>
+<br>
+    <h2>Seleccione una operación para ver el resultado</h2>
+
+    <details>
+        <summary class="boton">Operaciones</summary>
+        <div class="operaciones">
+            <p onclick="mostrarMensaje(sumar())">Suma</p>
+            <p onclick="mostrarMensaje(restar())">Resta</p>
+            <p onclick="mostrarMensaje(multiplicar())">Multiplicacion</p>
+            <p onclick="mostrarMensaje(dividir())">Division</p>
+        </div>
+    </details>
+
+    <img src="./public/xd.png" class="imagen">
+  
+    <img src="./public/dx.png" class="imagen2">
+
+
+    <div id="resultado" class="resultado"></div>
+    <script src="index.js"></script>
+    <script src="componentes/alert.js"></script>
+
+</body>
+
+</html>
